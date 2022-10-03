@@ -187,11 +187,17 @@ a:hover{
     background-image: none;
 }
 #content {
-    width: 200px;
-    height: 200px;
-    border: 1px solid #c3c3c3;
-    display: -webkit-flex;
-    -webkit-flex-direction: column;
-    display: flex;
-    flex-direction: column;
-  }
+    flex-direction: row;
+}
+.cajaPro{
+    padding: 50px;
+    text-align: center;
+}
+@keyframes slideFromRight {
+    from{
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
